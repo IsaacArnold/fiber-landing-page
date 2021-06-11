@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 const MainHeader = () => {
   return (
     <header className="main-header">
       <div className="content-container">
-        {/* <img
-        src="../images/hero-illustration.png"
-        alt="Person using multimedia while wearing VR Glasses"
-      /> */}
+        <StaticImage
+          src="../images/hero-illustration.png"
+          alt="Person using multimedia while wearing VR Glasses"
+        />
         <h1>Create your portfolio in minutes.</h1>
         <p>
           With Fiber, you can setup your own personal portfolio in minutes with
