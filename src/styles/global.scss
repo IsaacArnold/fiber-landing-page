@@ -75,6 +75,7 @@ p {
     display: flex;
     flex-direction: column;
     padding-bottom: 30px;
+    margin-top: 15px;
     .checkmark {
       margin-right: 10px;
     }
@@ -204,5 +205,40 @@ p {
       font-weight: 600;
       text-align: center;
     }
+  }
+}
+
+// Footer
+.footer {
+  background-color: $pale-background;
+  p,
+  li {
+    font-weight: 300;
+  }
+  li {
+    list-style-type: none;
+    margin-bottom: 15px;
+  }
+  ul {
+    padding: 0;
+  }
+  .fiber-section {
+    padding-top: 60px;
+    p {
+      margin-top: 10px;
+      &:first-of-type {
+        margin-bottom: 0;
+        width: 90%;
+      }
+    }
+  }
+  .sitemap-section,
+  .resources-section,
+  .company-section,
+  .portfolio-section {
+    margin-top: 30px;
+  }
+  .portfolio-section {
+    padding-bottom: 60px;
   }
 }
