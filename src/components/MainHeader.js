@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import Checkmark from "../images/svg/checkmark.svg";
 
 const MainHeader = () => {
   return (
@@ -24,12 +25,12 @@ const MainHeader = () => {
           </Link>
         </div>
         <div className="checkmark-section">
-          <div>
-            {/* <svg /> */}
+          <div className="checkmark-div">
+            <Checkmark className="checkmark" />
             <p>No Credit Card Required</p>
           </div>
-          <div>
-            {/* <svg /> */}
+          <div className="checkmark-div">
+            <Checkmark className="checkmark" />
             <p>10 Free Templates</p>
           </div>
         </div>

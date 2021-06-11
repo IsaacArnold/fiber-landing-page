@@ -31,6 +31,12 @@ p {
 // Navbar
 .navbar {
   background-color: $pale-background;
+  padding-top: 30px;
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 // Main Header
@@ -38,6 +44,7 @@ p {
   background-color: $pale-background;
   h1 {
     width: 70%;
+    margin-top: 30px;
   }
   p {
     font-weight: 300;
@@ -62,5 +69,49 @@ p {
     text-decoration: underline 2px;
     font-weight: 600;
     text-align: center;
+  }
+  .checkmark-section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    .checkmark {
+      margin-right: 10px;
+    }
+    .checkmark-div {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 10px;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Why Fiber
+.why-fiber {
+  margin-top: 60px;
+  header {
+    margin-bottom: 60px;
+  }
+  h4 {
+    margin-bottom: 15px;
+    color: $primary-color;
+    font-size: 1.1rem;
+  }
+  h2 {
+    font-size: 1.9rem;
+    width: 91%;
+  }
+  .features-section {
+    margin-bottom: 40px;
+    .features-heading {
+      margin-top: 10px;
+      font-weight: 600;
+    }
+    .features-content {
+      font-weight: 300;
+    }
   }
 }
