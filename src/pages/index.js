@@ -8,7 +8,6 @@ import Portfolios from "../components/Portfolios";
 export default function Home() {
   return (
     <Layout>
-      {/* <Navbar /> */}
       <MainHeader />
       <WhyFiber />
       <Diversify />

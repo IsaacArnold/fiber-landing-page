@@ -37,12 +37,19 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    ul,
+    .nav-btns {
+      display: none;
+    }
   }
 }
 
 // Main Header
 .main-header {
   background-color: $pale-background;
+  .rating {
+    display: none;
+  }
   h1 {
     width: 70%;
     margin-top: 30px;
@@ -240,5 +247,204 @@ p {
   }
   .portfolio-section {
     padding-bottom: 60px;
+  }
+}
+
+// Media Queries
+
+// Tablet - 768px
+@media (min-width: 768px) {
+  .header-img {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+  .main-header {
+    .content-container {
+      p,
+      .header-btns,
+      .checkmark-section {
+        width: 70%;
+      }
+    }
+  }
+  .why-fiber {
+    .features {
+      width: 70%;
+    }
+  }
+  .diversify {
+    .content-container {
+      h2,
+      p,
+      .page-image-two,
+      .diversify-btn {
+        width: 70%;
+        margin: auto;
+      }
+      p {
+        margin: 16px auto;
+      }
+      .page-image-two {
+        margin-top: 30px;
+      }
+    }
+  }
+  .footer {
+    .content-container {
+      .fiber-section {
+        p {
+          &:first-of-type {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Desktop - 1024px
+@media (min-width: 1024px) {
+  .navbar {
+    .content-container {
+      .hamburger {
+        display: none;
+      }
+      ul,
+      .nav-btns {
+        display: inline;
+      }
+      ul {
+        padding-left: 0;
+        display: flex;
+        margin-left: auto;
+        margin-right: 100px;
+      }
+      li {
+        font-weight: 300;
+        list-style-type: none;
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      .nav-btns {
+        .sign-in-btn,
+        .sign-up-btn {
+          text-decoration: none;
+        }
+        .sign-in-btn {
+          font-weight: 600;
+          padding: 15px 20px;
+        }
+        .sign-up-btn {
+          background-color: $primary-color;
+          color: $white-txt;
+          padding: 15px 20px;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+  .header-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "headerGridContent headerGridImg";
+    padding-top: 30px;
+    padding-bottom: 60px;
+    .header-img {
+      grid-area: headerGridImg;
+      width: 100%;
+      height: 100%;
+    }
+    .header-grid-content {
+      grid-area: headerGridContent;
+      align-self: center;
+      .rating {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .star {
+          margin-right: 5px;
+          &:last-of-type {
+            margin-right: 15px;
+          }
+        }
+        p {
+          font-size: 0.9rem;
+          font-weight: 300;
+          margin: 0;
+        }
+      }
+      h1 {
+        width: 80%;
+        margin-top: 15px;
+      }
+      p {
+        width: 100%;
+      }
+      .header-btns {
+        flex-direction: row;
+        width: 100%;
+      }
+      .checkmark-section {
+        flex-direction: row;
+        width: 100%;
+        .checkmark-div {
+          &:first-child {
+            margin-right: 10px;
+          }
+          p {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
+  .why-fiber {
+    .content-container {
+      h2 {
+        width: 75%;
+      }
+    }
+    .features {
+      width: 100%;
+      display: flex;
+      .features-section {
+        width: 55%;
+        margin-right: 50px;
+      }
+    }
+  }
+
+  .diversify {
+    .content-container {
+      .diversify-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "diversifyGridContent diversifyGridImg";
+        .diversify-grid-content {
+          grid-area: diversifyGridContent;
+          align-self: center;
+          h2 {
+            width: 100%;
+          }
+          p {
+            width: 100%;
+          }
+          .diversify-btn {
+            margin: 0;
+            width: 40%;
+          }
+        }
+        .page-image-two {
+          grid-area: diversifyGridImg;
+          width: 100%;
+        }
+      }
+    }
   }
 }
