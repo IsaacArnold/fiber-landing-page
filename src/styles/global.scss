@@ -20,7 +20,7 @@ p {
 
 // Layout
 .layout {
-  max-width: 1800px;
+  // max-width: 1800px;
   margin: 0 auto;
 }
 
@@ -421,6 +421,7 @@ p {
 
   .diversify {
     .content-container {
+      padding-top: 0;
       .diversify-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -444,6 +445,39 @@ p {
           grid-area: diversifyGridImg;
           width: 100%;
         }
+      }
+    }
+  }
+
+  .portfolios {
+    .content-container {
+      display: flex;
+      .port-card {
+        margin-right: 40px;
+        &:last-child {
+          margin-right: 0;
+        }
+        .user-btn {
+          margin-top: auto;
+        }
+      }
+    }
+  }
+
+  .footer {
+    .content-container {
+      display: flex;
+      align-items: flex-start;
+      .sitemap-section,
+      .resources-section,
+      .company-section,
+      .portfolio-section {
+        margin-right: 50px;
+        margin-top: 0;
+        padding-top: 60px;
+      }
+      .portfolio-section {
+        margin-right: 0;
       }
     }
   }
