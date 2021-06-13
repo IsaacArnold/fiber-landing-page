@@ -482,3 +482,35 @@ p {
     }
   }
 }
+
+// Max-width Media Queries
+@media (min-width: 1025px) {
+  .header-grid-content {
+    p {
+      max-width: 504px;
+    }
+  }
+  .header-grid {
+    .header-img {
+      max-width: 527px;
+    }
+  }
+  .why-fiber {
+    .content-container {
+      h2 {
+        max-width: 652px;
+      }
+      .features {
+        .features-section {
+          max-width: 291px;
+        }
+      }
+    }
+  }
+
+  .diversify {
+    .content-container {
+      max-width: 1156px;
+    }
+  }
+}
