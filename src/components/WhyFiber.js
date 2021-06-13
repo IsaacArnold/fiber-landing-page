@@ -32,7 +32,7 @@ const WhyFiber = () => {
             <AllSizes />
             <p className="features-heading">Responsive</p>
             <p className="features-content">
-              All Fiber templates are full responsive to ensure the experience
+              All Fiber templates are fully responsive to ensure the experience
               is seemless across all devices.
             </p>
           </div>
