@@ -485,6 +485,10 @@ p {
 
 // Max-width Media Queries
 @media (min-width: 1025px) {
+  .content-container {
+    max-width: 1598px;
+  }
+
   .header-grid-content {
     p {
       max-width: 504px;
@@ -502,7 +506,11 @@ p {
       }
       .features {
         .features-section {
-          max-width: 291px;
+          p {
+            &:last-child {
+              max-width: 325px;
+            }
+          }
         }
       }
     }
@@ -510,7 +518,31 @@ p {
 
   .diversify {
     .content-container {
-      max-width: 1156px;
+      .diversify-grid {
+        max-width: 1156px;
+        margin: auto;
+        .diversify-grid-content {
+          p {
+            max-width: 500px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .content-container {
+      .fiber-section {
+        p {
+          &:first-of-type {
+            max-width: 495px;
+          }
+        }
+      }
+      .sitemap-section {
+        margin-left: auto;
+      }
     }
   }
 }
