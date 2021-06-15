@@ -29,7 +29,7 @@ const MainHeader = () => {
               with dozens of premade, beautiful templates.
             </p>
             <div className="header-btns">
-              <Link to="/#" className="main-btn">
+              <Link to="/sign-up" className="main-btn">
                 Start Free Trial
               </Link>
               <Link to="/#" className="secondary-btn">

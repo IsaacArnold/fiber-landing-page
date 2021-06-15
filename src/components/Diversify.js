@@ -13,7 +13,7 @@ const Diversify = () => {
               Create an even more impressive portfolio by creating case studies
               for your projects. Simply follow our step-by-step guide.
             </p>
-            <Link to="/#" className="diversify-btn">
+            <Link to="/sign-up" className="diversify-btn">
               Start Free Trial
             </Link>
           </div>
