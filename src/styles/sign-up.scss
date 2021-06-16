@@ -60,6 +60,8 @@ p {
         border-radius: 8px;
         border: 1px solid lightgray;
         margin-top: 10px;
+        font-weight: 300;
+        font-size: 1rem;
         &::placeholder {
           font-weight: 300;
           font-size: 1rem;
@@ -72,7 +74,7 @@ p {
         content: "";
         position: absolute;
         right: 10px;
-        top: 47px;
+        top: 45px;
         cursor: pointer;
       }
       .password-input {
@@ -111,3 +113,9 @@ p {
 }
 
 // Media Queries
+// Tablet - 768px
+@media (min-width: 768px) {
+  .sign-up-layout {
+    width: 60%;
+  }
+}
