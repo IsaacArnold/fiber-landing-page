@@ -31,6 +31,7 @@ const SignUp = () => {
             type="text"
             value={name}
             placeholder="John Doe"
+            required="true"
             onChange={(e) => setName(e.target.value)}
           />
         </label>
@@ -40,6 +41,7 @@ const SignUp = () => {
             type="text"
             value={email}
             placeholder="john@example.com"
+            required="true"
             onChange={(e) => setEmail(e.target.value)}
           />
         </label>
@@ -51,20 +53,21 @@ const SignUp = () => {
             placeholder="At least 8 characters"
             onChange={(e) => setPassword(e.target.value)}
             minLength="8"
+            required="true"
           />
         </label>
         <label>
-          <input
-            type="checkbox"
-            name="agree"
-            placeholder="At least 8 characters"
-            required="true"
-          />
-          By creating an account on Fiber, you agree to the Terms & Conditions.
+          <input type="checkbox" name="agree" required="true" />
+          <p className="terms">
+            By creating an account on Fiber, you agree to the{" "}
+            <strong>Terms & Conditions.</strong>
+          </p>
         </label>
         <button type="submit">Create Fiber Account</button>
       </form>
-      <p>Already have an account? Sign in</p>
+      <p className="sign-up-footer">
+        Already have an account? <span className="emph-footer">Sign in</span>
+      </p>
     </div>
   );
 };

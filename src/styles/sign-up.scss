@@ -22,6 +22,7 @@ p {
 .sign-up-layout {
   width: 85%;
   margin: 0 auto;
+  padding: 30px 0;
   form {
     display: flex;
     flex-direction: column;
@@ -30,10 +31,15 @@ p {
       flex-direction: column;
       font-weight: 500;
       font-size: 1.2rem;
+      margin-top: 30px;
       &:last-of-type {
         flex-direction: row;
         font-weight: 300;
         font-size: 1rem;
+        input {
+          height: initial;
+          margin-top: 5px;
+        }
       }
       input {
         height: 3rem;
@@ -41,10 +47,7 @@ p {
         outline-color: $primary-color;
         border-radius: 8px;
         border: 1px solid lightgray;
-        &:last-child {
-          height: initial;
-          margin-top: 5px;
-        }
+        margin-top: 10px;
         &::placeholder {
           font-weight: 300;
           font-size: 1rem;
@@ -54,6 +57,7 @@ p {
   }
   h1 {
     font-size: 1.2rem;
+    margin-bottom: 60px;
     .link {
       text-decoration: none;
       color: #000;
@@ -71,5 +75,24 @@ p {
     text-decoration: none;
     font-weight: 600;
     text-align: center;
+    margin: 30px 0;
+  }
+
+  .terms {
+    margin: 0;
+    margin-left: 10px;
+  }
+
+  strong {
+    color: $primary-color;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  .sign-up-footer {
+    text-align: center;
+    .emph-footer {
+      color: $primary-color;
+    }
   }
 }
