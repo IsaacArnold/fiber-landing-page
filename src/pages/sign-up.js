@@ -9,6 +9,7 @@ const SignUp = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isRevealPwd, setIsRevealPwd] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,7 +33,7 @@ const SignUp = () => {
             type="text"
             value={name}
             placeholder="John Doe"
-            required="true"
+            required={true}
             onChange={(e) => setName(e.target.value)}
           />
         </label>
@@ -42,25 +43,29 @@ const SignUp = () => {
             type="text"
             value={email}
             placeholder="john@example.com"
-            required="true"
+            required={true}
             onChange={(e) => setEmail(e.target.value)}
           />
         </label>
         <label className="password">
           Password
           <input
-            type="password"
+            type={isRevealPwd ? "text" : "password"}
             value={password}
             placeholder="At least 8 characters"
             onChange={(e) => setPassword(e.target.value)}
             minLength="8"
-            required="true"
+            required={true}
             className="password-input"
           />
-          <HidePassword className="password-svg" />
+          <HidePassword
+            className="password-svg"
+            title={isRevealPwd ? "Hide password" : "Show password"}
+            onClick={() => setIsRevealPwd((prevState) => !prevState)}
+          />
         </label>
         <label>
-          <input type="checkbox" name="agree" required="true" />
+          <input type="checkbox" name="agree" required={true} />
           <p className="terms">
             By creating an account on Fiber, you agree to the{" "}
             <strong>Terms & Conditions.</strong>
