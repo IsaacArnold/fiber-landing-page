@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
+import HidePassword from "../images/svg/hide-password.svg";
 
 import "../styles/normalize.css";
 import "../styles/sign-up.scss";
@@ -45,7 +46,7 @@ const SignUp = () => {
             onChange={(e) => setEmail(e.target.value)}
           />
         </label>
-        <label>
+        <label className="password">
           Password
           <input
             type="password"
@@ -54,7 +55,9 @@ const SignUp = () => {
             onChange={(e) => setPassword(e.target.value)}
             minLength="8"
             required="true"
+            className="password-input"
           />
+          <HidePassword className="password-svg" />
         </label>
         <label>
           <input type="checkbox" name="agree" required="true" />
@@ -66,7 +69,10 @@ const SignUp = () => {
         <button type="submit">Create Fiber Account</button>
       </form>
       <p className="sign-up-footer">
-        Already have an account? <span className="emph-footer">Sign in</span>
+        Already have an account?{" "}
+        <Link to="#" className="emph-footer">
+          Sign in
+        </Link>
       </p>
     </div>
   );
