@@ -11,12 +11,14 @@ const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isRevealPwd, setIsRevealPwd] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setName("");
     setEmail("");
     setPassword("");
+    setIsChecked(false);
   };
 
   return (
@@ -67,7 +69,13 @@ const SignUp = () => {
             />
           </label>
           <label>
-            <input type="checkbox" name="agree" required={true} />
+            <input
+              type="checkbox"
+              name="agree"
+              checked={isChecked}
+              required={true}
+              onChange={() => setIsChecked((prevState) => !prevState)}
+            />
             <p className="terms">
               By creating an account on Fiber, you agree to the{" "}
               <strong>Terms & Conditions.</strong>
