@@ -183,6 +183,29 @@ p {
         margin-top: 10px;
         max-width: 400px;
       }
+      .circles {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        .circle-one,
+        .circle-two,
+        .circle-three,
+        .circle-four {
+          width: 10px;
+          height: 10px;
+          background-color: $white-txt;
+          opacity: 0.5;
+          margin-left: 5px;
+          border-radius: 50%;
+        }
+        .circle-one {
+          margin-left: 0;
+          color: $white-txt;
+          opacity: 1;
+        }
+      }
     }
   }
 }

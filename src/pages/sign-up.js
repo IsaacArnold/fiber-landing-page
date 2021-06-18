@@ -93,6 +93,12 @@ const SignUp = () => {
           Crafted by a team of professional deisgners, our templates are
           unparalleled in the market.
         </p>
+        <div className="circles">
+          <div className="circle-one"></div>
+          <div className="circle-two"></div>
+          <div className="circle-three"></div>
+          <div className="circle-four"></div>
+        </div>
       </div>
     </div>
   );
