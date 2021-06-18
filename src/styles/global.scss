@@ -12,6 +12,7 @@ $white-background: #fff;
   font-family: "Inter", sans-serif;
   box-sizing: border-box;
   letter-spacing: 0.4px;
+  scroll-behavior: smooth;
 }
 
 p {
@@ -33,6 +34,11 @@ p {
 .navbar {
   background-color: $pale-background;
   padding-top: 30px;
+  cursor: pointer;
+  .nav-brand {
+    text-decoration: none;
+    color: #000;
+  }
   .content-container {
     display: flex;
     justify-content: space-between;
@@ -225,6 +231,7 @@ p {
   li {
     list-style-type: none;
     margin-bottom: 15px;
+    cursor: pointer;
   }
   ul {
     padding: 0;

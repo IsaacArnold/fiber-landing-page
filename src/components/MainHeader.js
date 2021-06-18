@@ -32,7 +32,7 @@ const MainHeader = () => {
               <Link to="/sign-up" className="main-btn">
                 Start Free Trial
               </Link>
-              <Link to="/#" className="secondary-btn">
+              <Link to="/#portfolios" className="secondary-btn">
                 View Examples
               </Link>
             </div>

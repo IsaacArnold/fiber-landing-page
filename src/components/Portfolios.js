@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const Portfolios = () => {
   return (
-    <section className="portfolios">
+    <section className="portfolios" id="portfolios">
       <div className="content-container">
         <div className="port-card">
           <StaticImage
